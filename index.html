@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Bottom menu -->
+        <header align="center" >
+            <ul class="nav">
+              
+                <li><a href="http://instagram.com/misto_mame_collective">insta</a></li>
+                <li><a href="https://mistomame.bandcamp.com">sounds</a></li>
+                  <li><a href="mailto:mistomamecollective@gmail.com">contacts</a></li>  
+            
+     </header>
+    <meta charset="utf-8">
+<title>mmap</title>
+<meta charset="utf-8">
+<title>mmap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+    font-family: Lato, "Open Sans", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+     .responsive {
+  width: 100%;
+  height: auto;
+}
+     
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+<link href="fakenews.css" rel="stylesheet">
+<link href=".css" rel="stylesheet">
+<style>
+#FlexGrid1
+{
+   background-color: black;
+   background-image: none;
+   border: 0px solid black;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0px 0px 0px 0px;
+}
+#FlexGrid1-grid
+{
+   display: grid;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1024px;
+   font-size: 0px;
+   grid-column-gap: 5px;
+   grid-row-gap: 5px;
+   grid-template-columns: 1fr 1fr 1fr 2fr;
+   grid-template-rows: auto auto auto auto auto auto auto 100px auto;
+   grid-template-areas:
+      "title title title title"
+      "main main main sidebar"
+      "main main main ad3"
+      "story1 story1 ad1 ad2"
+      "story2 story2 . ."
+      "story3 story3 . ."
+      "social social social social"
+
+}
+#FlexGrid1 .header
+{
+   display: flex;
+   grid-area: header;
+   background-color: #777777;
+   background-image: none;
+   padding: 10px 10px 10px 10px;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .title
+{
+   display: flex;
+   grid-area: title;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .main
+{
+   display: flex;
+   grid-area: main;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .sidebar
+{
+   display: flex;
+   grid-area: sidebar;
+   background-color: transparent;
+   background-image: none;
+   padding: 10px 10px 10px 10px;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .ad3
+{
+   display: flex;
+   grid-area: ad3;
+   background-color: transparent;
+   background-image: none;
+   padding: 10px 10px 10px 10px;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .story1
+{
+   display: flex;
+   grid-area: story1;
+   background-color: transparent;
+   background-image: none;
+   padding: 0px 0px 10px 0px;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .ad1
+{
+   display: flex;
+   grid-area: ad1;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .ad2
+{
+   display: flex;
+   grid-area: ad2;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .story2
+{
+   display: flex;
+   grid-area: story2;
+   background-color: transparent;
+   background-image: none;
+   padding: 0px 0px 10px 0px;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .story3
+{
+   display: flex;
+   grid-area: story3;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .social
+{
+   display: flex;
+   grid-area: social;
+   background-color: transparent;
+   background-image: none;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .footer
+{
+   display: flex;
+   grid-area: footer;
+   background-color: #777777;
+   background-image: none;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 20px 0px 20px 0px;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#Heading1
+{
+   color: #FFFFFF;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 25px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 10px 10px 10px 10px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 15px;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Image1
+     .responsive {
+  width: 100%;
+  height: auto;
+}
+{
+   margin: 0;
+   vertical-align: top;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0px 0px 0px 0px;
+   margin: 0;
+   display: inline-block;
+   width: 100%;
+   height: auto;
+}
+#wb_Text2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 10px 10px 10px 10px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 11px;
+   line-height: 13px;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#wb_Heading3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0px 10px 10px 10px;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#Heading3
+{
+   color: #FFFFFF;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 27px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Heading6
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0px 0px 0px 10px;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 50%;
+   flex-basis: 50%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#Heading6
+{
+   color: white;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 10px;
+   margin: 0;
+   text-align: left;
+}
+</style>
+</head>
+<body>
+     <p><br>
+             <div style="text-align:center"> ~ Misto Mame A Performance: raccolta di situazionismi performativi a cura del collettivo con sede in 00185 ~</div></ul>
+             </p>   
+   <div id="FlexGrid1">
+      <div id="FlexGrid1-grid">
+         <div class="header">
+         </div>
+         <div class="title">
+            <div id="wb_Heading1" style="display:inline-block;text-align:center;z-index:0;">
+               <h1 id="Heading1">MMAP 00185</h1>
+            </div>
+         </div>
+         <div class="main">
+            <div id="wb_Text1">
+               <div style="color:#000000;">
+                  <blockquote><div><span style="color:#FFFFFF;"><strong>Tratto da FENOMENOLOGIA DEL TRAUMA: L'ESPERIENZA UMANA COME METAFORA UNIVERSALE</strong></span></div>
+                  <div><span style="color:#FFFFFF;"><strong>del dottor Marco Giugliano</strong></span></div>
+                  <div>&nbsp;</div>
+                  <div><span style="color:#FFFFFF;">(...)Visto che il trauma &egrave; collocabile in un particolare momento nel tempo ed ubicabile in uno spazio circoscritto, deve far riferimento ad un evento specifico. Nella mente di chi lo subisce resta come un'istantanea di pensieri, di parole, di emozioni, di sensazioni e di immagini che gela gli stati mentali riportando la persona sempre agli stessi contenuti immaginativi. Se questo tipo di esperienza mentale ha la stessa denominazione di un trauma fisico &egrave; anche per la sua capacit&agrave; di lasciarci una ferita, l'istantanea del nostro trauma. La traccia segnata da questo tipo di esperienze &egrave; talmente netta da collocare dei cardini nella linea temporale della nostra vita, questi demarcano la continuit&agrave; della nostra esperienza; esiste un &ldquo;io&rdquo; prima del nostro trauma e un altro che si delinea dopo. Per queste ragioni il trauma affiora come un entit&agrave; dall'essenza statica. La nostra mente, per natura fluida e cangiante, transito di idee, credenze, pensieri su di noi e su quello che ci circonda, si ritrova un monolite nel bel mezzo del suo spazio, qualcosa a cui resta ancorato tutto ci&ograve; che vi transita. In una concezione paradossale e dicotomica possiamo dunque considerare come trauma qualunque evento che generi una perturbazione della regolare dinamica di un fenomeno, come il collasso di una stella o la necrosi cellulare. Questi fenomeni si manifestano su scale diverse e con dinamiche estremamente variegate e per certi aspetti non paragonabili, tuttavia l'essenza del fenomeno resta la stessa. Nell'universo personale l'uomo crea una rappresentazione della sua esistenza, del suo arco di vita, colloca se stesso nel tempo che vive, interpreta e crea dei significati, degli scopi e delle credenze su se stesso e sul mondo che lo circonda. (...)</span></div>
+                  <div><span style="color:#FFFFFF;"></span></div></blockquote>
+                  <div>&nbsp;</div>
+<div><span style="color:#FFFFFF;"> In occasione dell&rsquo;apertura della nuova sede di Numero Cromatico, uno spazio di 180 mq nello storico edificio del Pastificio Cerere, il collettivo Misto Mame si esibir&agrave; in una performance site-specific il 14 Marzo 2019 alle ore 22,00 presso il Pasificio Cerere, Via degli Ausoni 1, 00185 Roma.</span></div>
+                  <div>&nbsp;</div>
+                 <div><span style="color:#FFFFFF;">&nbsp;&nbsp;&nbsp; DOPO &egrave; la rappresentazione multisensoriale di un trauma interiore, dei suoi sviluppi e delle sue ritrazioni. </span></div>
+                  <div><span style="color:#FFFFFF;">&nbsp;&nbsp;&nbsp; Il collettivo artistico Misto Mame invita a riflettere sulla manifestazione di un trauma, sul tema della permanenza e della necessit&agrave; di assicurarsi una memoria postuma. Una performance composita e declinata in diversi momenti che gi&agrave; dal titolo Dopo parla di qualcosa di successivo, cos&igrave; come nel futuro sono visibili i sintomi di un trauma. Il trauma &egrave; visto come evento interiore, azione di forze disgreganti che, attraverso meccanismi della mente in perpetuo movimento, si materializza in forme di ricordo latenti e frammentate. Una decomposizione articolata in pi&ugrave; fasi che portano l'individuo a dover fronteggiare uno stato di alterazione e di necessit&agrave; per poter andare avanti.</span></div>
+                  <div><span style="color:#FFFFFF;">&nbsp;&nbsp;&nbsp; Esso, infine, si sublima in un ricordo permanente e radicato nella memoria, che si compone di ricordi parziali, alterati: la sound track registrata e simultaneamente modificata tramite sintesi granulare sar&agrave; solo un eco differente di quella appena esibita, l&rsquo;unica traccia permanente di quello che &egrave; stato. </span></div>
+                  <div>&nbsp;</div>
+                  <div><span style="color:#FFFFFF;">&nbsp;&nbsp;&nbsp; DOPO &egrave;, dunque, una riflessione sulla vita, sulla morte e sul concetto di aldil&agrave; messa in scena da Misto Mame, collettivo dal tratto poliedrico e multiforme, nonch&eacute; una delle voci originali e provocatorie di rappresentanza del nostro contemporaneo. </span></div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div style="text-align:center"><span style="color:#FFFFFF;">&nbsp;&nbsp;&nbsp; info@mistomame.zone / numerocromatico@gmail.com</span></div>
+               </div>
+            </div>
+         </div>
+         <div class="sidebar">
+            <div id="wb_Image1" style="display:inline-block;z-index:2;">
+               <img src="bg/dopodef_red.jpg" id="Image1" alt="" title="1240×1754" class="responsive">
+            </div>
+         </div>
+         <div class="ad3">
+            <div id="wb_Heading3" style="display:inline-block;z-index:3;">
+               <h2 id="Heading3">ABOUT</h2>
+            </div>
+            <div id="wb_Text2">
+               <div style="color:#000000;">
+                  <div><span style="color:#FFFFFF;">~~~~</span></div>
+                  <div>&nbsp;</div>
+                  <div><span style="color:#FFFFFF;">an apartment in Rome 00185 // creative crew // pasta performers // cradle of the New Weird Italia // mistomame.zone ______________</span></div>
+                  <div>&nbsp;</div>
+                  <div><span style="color:#FFFFFF;">Misto Mame &egrave; un quartiere di Tirana che prende nome dal partigiano Misto Mame ucciso dai fascisti italiani nella seconda guerra mondiale. in italia &egrave; un collettivo artistico che nasce in un appartamento di San Lorenzo. ad ora &egrave; quell'appartamento. tutti gli ospiti, temporanei e non, fanno esperienza della decostruzione di paradigmi imposti dalla societ&agrave; occidentale esprimendosi nell'arte e nella conversazione.</span></div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div><span style="color:#FFFFFF;">&copy; 2019 Misto Mame Collective, 00185 </span></div>
+               </div>
+            </div>
+         </div>
+         <div class="story1">
+         </div>
+         <div class="ad1">
+         </div>
+         <div class="ad2">
+         </div>
+         <div class="story2">
+            <div id="wb_Heading6" style="display:inline-block;z-index:5;">
+               <h2 id="Heading6" color="white">a catturare i raggi, i pischelli tolti al sole (Dori)</h2>
+            </div>
+         </div>
+         <div class="story3">
+         </div>
+         <div class="social">
+         </div>
+         <div class="footer">
+         </div>
+      </div>
+   </div>
+</a>
+    </html>
