@@ -458,40 +458,35 @@
                     padding: 12px 20px;
                     border: none;
                     border-radius: 4px;
-                    border-top: 30px;
+                    margin-top: 36px;
+                    width: 75%;
                     cursor: pointer;
-                    float: right;
+                    float: left;
                 }
-
+                
+                input[type=submit]:hover {
+                    background-color: dimgray;
+                }
+                
                 .container {
                     border-radius: 5px;
                     background-color: yellow;
                     padding: 20px;
                     float: left;
                 }
-
-                /* Floating column for labels: 25% width */
-                .col-25 {
-                    float: left;
-                    width: 25%;
-                    margin-top: 6px;
-                }
-
-                /* Floating column for inputs: 75% width */
+                
                 .col-75 {
                     float: left;
                     width: 75%;
                     margin-top: 6px;
                 }
 
-                /* Clear floats after the columns */
                 .row:after {
                     content: "";
                     display: table;
                     clear: both;
                 }
 
-                /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
                 @media screen and (max-width: 600px) {
                     .col-25, .col-75, input[type=submit] {
                         width: 100%;
@@ -514,30 +509,24 @@
                 </div>
             </div>
             <div class="main">
-                <div class="container">
-                    <form action="formhandler.php">
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="fname">Nome</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="fname" name="nome">
-                            </div>
+            <div class="container">
+                <form action="formhandler.php">
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="fname" name="nome" placeholder="Nome">
                         </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="lname">Cognome</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="lname" name="cognome">
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="lname" name="cognome" placeholder="Cognome">
                         </div>
-                        <div class="row">
-                            <input type="submit" value="Invia">
-                        </div>
-                    </form>
-                </div> 
-            </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Invia">
+                    </div>
+                </form>
+            </div> 
+                </div>
             <div class="sidebar">
                 <div id="wb_Image1" style="display:inline-block;z-index:2;">
                     <img src="bg/P_LOC copy.jpg" id="Image1" alt="" title="1240×1754" class="responsive">
