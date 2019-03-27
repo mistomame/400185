@@ -463,18 +463,18 @@
                     cursor: pointer;
                     float: left;
                 }
-                
+
                 input[type=submit]:hover {
                     background-color: dimgray;
                 }
-                
+
                 .container {
                     border-radius: 5px;
                     background-color: yellow;
                     padding: 20px;
                     float: left;
                 }
-                
+
                 .col-75 {
                     float: left;
                     width: 75%;
@@ -509,24 +509,32 @@
                 </div>
             </div>
             <div class="main">
-            <div class="container">
-                <form action="formhandler.php">
-                    <div class="row">
+                <div class="container">
+                    <form action="formhandler.php">
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="fname" name="nome" placeholder="Nome">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="lname" name="cognome" placeholder="Cognome">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Invia">
+                        </div>
+                    </form>
+                    <div id="wb_Text1">
                         <div class="col-75">
-                            <input type="text" id="fname" name="nome" placeholder="Nome">
+                            <p>
+                                Qui ci sta tutto il testo in cui si parla di cose riguardanti il form, il quale si trova proprio qui sopra. Ad ogni modo sto scrivendo un po' per vedere come si va ad incastonare il testo, considerando che il layout di questa pagina è un delirio quindi devo anche sperare che le cose vadano bene da sole. Ammetto di andare un po' a culo, sarà che è tardi o sarà che si tratta di un metodo il quale, in passato, si è rivelato determinante nel conseguimento dei miei successi personali; sebbene, talvolta, sia stato foriere di sonori fallimenti.
+                            </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="lname" name="cognome" placeholder="Cognome">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Invia">
-                    </div>
-                </form>
-            </div> 
                 </div>
+            </div>
+
             <div class="sidebar">
                 <div id="wb_Image1" style="display:inline-block;z-index:2;">
                     <img src="bg/P_LOC copy.jpg" id="Image1" alt="" title="1240×1754" class="responsive">
@@ -563,7 +571,7 @@
             </div>
             <div class="story2">
                 <div id="wb_Heading6" style="display:inline-block;z-index:5;">
-                    <h2 id="Heading6" >a catturare i raggi, i pischelli tolti al sole (Dori)</h2>
+                    <h2 id="Heading6" ></h2>
                 </div>
             </div>
             <div class="story3">
